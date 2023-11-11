@@ -1,0 +1,18 @@
+{% extends 'blogs/base.html' %}
+
+{% block page_header %}
+    <div class="p-3 mb-4 bg-light border rounded-3">
+        <div class="container-fluid py-4">
+            <h1 class="display-3">Blog Host</h1>
+
+            <p class="lead">Create your own blog to share your thoughts, experiences, and personal stories.</p>
+
+            <a class="btn btn-primary btn-lg mt-1"
+               href="{% url 'accounts:register' %}">Register &raquo;</a>
+        </div>
+    </div>
+{% endblock page_header %}
+
+{% block content %}
+  <p>Blog is a way to share your thoughts, experiences, and personal stories with a wider audience.</p>
+{% endblock content %}
